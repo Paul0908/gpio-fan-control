@@ -1,0 +1,9 @@
+gpio-fan-control/target
+gpio-fan-control/Cargo.lock
+
+**/*.rs.bk
+
+.idea
+
+*.pdb
+*.exe
