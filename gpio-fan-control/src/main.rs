@@ -9,6 +9,7 @@ const TEMP_FILE_PATH: &str = "/sys/class/thermal/thermal_zone0/temp";
 const GPIO_PIN: u16 = 73;
 const CHECK_INTERVAL: Duration = Duration::from_secs(5);
 const TEMP_THRESHOLD: f32 = 50.0;
+
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     SimpleLogger::new().init().unwrap();
     let mut gpio_fan_pin = SysFsGpioOutput::open(GPIO_PIN).unwrap();
